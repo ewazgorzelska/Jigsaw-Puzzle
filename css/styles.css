@@ -1,0 +1,40 @@
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe):not(canvas):not(img):not(svg):not(video):not(svg *)) {
+  all: unset;
+  display: revert; }
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove list styles (bullets/numbers) */
+ol, ul {
+  list-style: none; }
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%; }
+
+.puzzle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.dropzone {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 70vw;
+  height: 60vh; }
+
+.pattern {
+  width: 300px; }
+
+.btn {
+  background-color: red; }
+
+.dropBox, .pieces {
+  border: 1px solid black;
+  width: 15vw;
+  height: 15vh; }

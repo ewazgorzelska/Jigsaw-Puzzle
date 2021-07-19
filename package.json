@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "eslint": "^7.31.0"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "name": "jigsaw-puzzle",
+  "description": "Jigsaw puzzle game implementing HTML5 Drag-and-Drop API, with HTML, SaSS, VanillaJS",
+  "version": "1.0.0",
+  "main": "scripts.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewazgorzelska/Jigsaw-Puzzle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewazgorzelska/Jigsaw-Puzzle/issues"
+  },
+  "homepage": "https://github.com/ewazgorzelska/Jigsaw-Puzzle#readme"
+}
