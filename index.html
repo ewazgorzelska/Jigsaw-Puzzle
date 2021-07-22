@@ -8,7 +8,7 @@
   <title>Jigsaw Puzzle</title>
   <meta name="description" content="Play drag-and-drop jigsaw puzzle game">
   <meta name="author" content="Ewa Zgorzelska">
-
+  <link rel="shortcut icon" href="#" />
   <meta property="og:title" content="Jigsaw Puzzle">
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
@@ -28,48 +28,48 @@
     </div>
     <div class="puzzle">
       <div class="dropzone">
-        <div id="dropBox1" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox2" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox3" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox4" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox5" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox6" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox7" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox8" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox9" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox10" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox11" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox12" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox13" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox14" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox15" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox16" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox17" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox18" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox19" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
-        <div id="dropBox20" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox1" data-boxId="1" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox2" data-boxId="2" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox3" data-boxId="3" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox4" data-boxId="4" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox5" data-boxId="5" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox6" data-boxId="6" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox7" data-boxId="7" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox8" data-boxId="8" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox9" data-boxId="9" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox10" data-boxId="10" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox11" data-boxId="11" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox12" data-boxId="12" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox13" data-boxId="13" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox14" data-boxId="14" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox15" data-boxId="15" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox16" data-boxId="16" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox17" data-boxId="17" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox18" data-boxId="18" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox19" data-boxId="19" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
+        <div id="dropBox20" data-boxId="20" ondrop="drop(event)" ondragover="allowDrop(event)" class="dropBox"></div>
       </div>
         <div class="container-pieces">
-          <img id="piece1" src="assets/1.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece2" src="assets/2.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece3" src="assets/3.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece4" src="assets/4.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece5" src="assets/5.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece6" src="assets/6.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece7" src="assets/7.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece8" src="assets/8.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece9" src="assets/9.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece10" src="assets/10.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece11" src="assets/11.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece12" src="assets/12.jpg" draggable="true" ondragstart="drag(event)"class="pieces"/>
-          <img id="piece13" src="assets/13.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece14" src="assets/14.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece15" src="assets/15.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece16" src="assets/16.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece17" src="assets/17.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece18" src="assets/18.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece19" src="assets/19.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
-          <img id="piece20" src="assets/20.jpg" draggable="true" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece1" data-pieceId="1" src="assets/1.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece2" data-pieceId="2" src="assets/2.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece3" data-pieceId="3" src="assets/3.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece4" data-pieceId="4" src="assets/4.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece5" data-pieceId="5" src="assets/5.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece6" data-pieceId="6" src="assets/6.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece7" data-pieceId="7" src="assets/7.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece8" data-pieceId="8" src="assets/8.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece9" data-pieceId="9" src="assets/9.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece10" data-pieceId="10" src="assets/10.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece11" data-pieceId="11" src="assets/11.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece12" data-pieceId="12" src="assets/12.jpg" ondragstart="drag(event)"class="pieces"/>
+          <img id="piece13" data-pieceId="13" src="assets/13.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece14" data-pieceId="14" src="assets/14.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece15" data-pieceId="15" src="assets/15.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece16" data-pieceId="16" src="assets/16.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece17" data-pieceId="17" src="assets/17.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece18" data-pieceId="18" src="assets/18.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece19" data-pieceId="19" src="assets/19.jpg" ondragstart="drag(event)" class="pieces"/>
+          <img id="piece20" data-pieceId="20" src="assets/20.jpg" ondragstart="drag(event)" class="pieces"/>
         </div>
         <button class="btn newgame-btn">New Game</button>
       </div>

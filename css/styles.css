@@ -43,7 +43,7 @@ body {
   justify-content: space-evenly;
   margin: 3em auto auto auto;
   width: 500px;
-  height: 700px;
+  height: 600px;
   border: 1px solid black;
   background-color: #4267B2;
   -webkit-box-shadow: 5px 5px 15px 5px rgba(66, 103, 178, 0.6);
@@ -53,10 +53,6 @@ body {
   font-size: 40px;
   color: #FFF;
   font-weight: bold;
-}
-
-.hide {
-  opacity: 0;
 }
 
 .puzzle {
@@ -72,6 +68,13 @@ body {
 .container-pieces, .dropzone {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dropzone {
+  border: 1px solid #E3256B;
+}
+.dropzone div {
+  border: 1px solid #E3256Bed;
 }
 
 .container-pieces {
@@ -92,10 +95,10 @@ body {
   font-size: 20px;
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 .pieces, .dropBox {
-  border: 1px solid black;
   width: 80px;
   height: 50px;
 }
