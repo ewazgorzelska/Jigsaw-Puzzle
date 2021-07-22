@@ -26,7 +26,6 @@
   #root {
     width: 70vw;
     margin: auto;
-    border: 1px solid red;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -112,6 +111,8 @@
 }
 .newgame-btn {
   margin-top: $margin-puzzle;
+  position: fixed;
+  bottom: 25px;
 }
 
   

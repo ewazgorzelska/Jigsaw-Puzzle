@@ -28,7 +28,6 @@ body {
 #root {
   width: 70vw;
   margin: auto;
-  border: 1px solid red;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -105,6 +104,8 @@ body {
 
 .newgame-btn {
   margin-top: 2em;
+  position: fixed;
+  bottom: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */

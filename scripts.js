@@ -30,6 +30,8 @@ const startGame = () => {
   //shuffling();
 }
 
+const start = new Date().getTime();
+
 startButton.addEventListener('click', startGame);
 
 //drag and drop
@@ -44,7 +46,30 @@ const allowDrop = event => {
   } 
 };
 
+const prepareTime = () => {
+  const end = new Date().getTime();
+  const time = end - start;
+  console.log(time);
+
+  let seconds = parseInt((time/1000)%60)
+  let minutes = parseInt((time/(1000*60))%60)
+  let hours = parseInt((time/(1000*60*60))%24);
+
+  hours = (hours < 10) ? "0" + hours : hours;
+  minutes = (minutes < 10) ? "0" + minutes : minutes;
+  seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+  return hours + ":" + minutes + ":" + seconds + ".";
+}
+
 const arrOfIds = [];
+
+const checkCorectness = () => {
+  if (arrOfIds.length === dropBoxes.length) {
+    alert(`you won! Your time is: ${prepareTime()}`);
+  }
+}
+
 
 const drop = event => {
   event.preventDefault();
@@ -54,12 +79,19 @@ const drop = event => {
     event.target.style.border = 'none';
     dropZone.style.border = 'none';
     arrOfIds.push(event.target.dataset.boxid);
-    if (arrOfIds.length === dropBoxes.length) {
-      alert('you won');
-    }
   }
-  
+  checkCorectness();
 }
+
+const startNewGame = () => {
+  window.location.reload(true);
+  hide(startView);
+  shuffling();
+};
+
+newGameButton.addEventListener('click', startNewGame);
+
+
 
 
 
