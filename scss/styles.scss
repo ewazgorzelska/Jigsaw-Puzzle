@@ -60,7 +60,8 @@
     align-items: center;
     position: absolute;
     top: 30px;
-    width: 70vw; 
+    width: 70vw;
+    visibility: hidden; 
   }
 
 %puzzle-container-shared {
@@ -71,9 +72,6 @@
 .dropzone {
   @extend %puzzle-container-shared;
   border: 1px solid #E3256B;
-    div {
-      border: 1px solid #E3256Bed;
-    }
 }
 
 .container-pieces {
@@ -104,6 +102,7 @@
      
 .dropBox {
   @extend %puzzle-shared;
+  border: 1px solid #E3256Bed;
 }
 
 .pieces {
