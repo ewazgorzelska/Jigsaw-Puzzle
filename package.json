@@ -1,6 +1,8 @@
 {
   "devDependencies": {
-    "eslint": "^7.31.0"
+    "cssnano": "^5.0.8",
+    "eslint": "^7.31.0",
+    "postcss": "^8.3.6"
   },
   "dependencies": {
     "node-sass": "^6.0.1"
@@ -10,7 +12,8 @@
   "version": "1.0.0",
   "main": "scripts.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "sass": "node-sass -w scss/ -o css/ --recursive",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
