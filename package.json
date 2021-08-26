@@ -1,7 +1,9 @@
 {
   "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
     "cssnano": "^5.0.8",
     "eslint": "^7.31.0",
+    "parcel": "^2.0.0-rc.0",
     "postcss": "^8.3.6"
   },
   "dependencies": {
@@ -10,9 +12,9 @@
   "name": "jigsaw-puzzle",
   "description": "Jigsaw puzzle game implementing HTML5 Drag-and-Drop API, with HTML, SaSS, VanillaJS",
   "version": "1.0.0",
-  "main": "scripts.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o css/ --recursive",
+    "start": "parcel index.html",
     "build": "parcel build index.html"
   },
   "repository": {
