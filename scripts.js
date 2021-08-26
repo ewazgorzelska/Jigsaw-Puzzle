@@ -54,7 +54,7 @@
     hide(startView);
     show(puzzle)
     show(newGameButton);
-    shuffling();
+    //shuffling();
   }
   
   startButton.addEventListener('click', startGame);
